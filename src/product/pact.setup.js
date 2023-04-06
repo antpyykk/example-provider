@@ -23,17 +23,17 @@ const setupServer = () => {
 const stateHandlers = {
   "products exists": () => {
     controller.repository.products = new Map([
-      ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1","blue")],
+      ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1","blue", "John Doe")],
     ]);
   },
   "products exist": () => {
     controller.repository.products = new Map([
-      ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1","blue")],
+      ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1","blue", "Jane Doe")],
     ]);
   },
   "a product with ID 10 exists": () => {
     controller.repository.products = new Map([
-      ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1","blue")],
+      ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1","blue", "Mr Foobar")],
     ]);
   },
   "a product with ID 11 does not exist": () => {
